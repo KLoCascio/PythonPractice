@@ -73,10 +73,23 @@
 # print(items)
 # print(10-1)
 
+# # modulus vs division
 # for i in range(10):
 #     print (i//3, i%3)
 
-a = 10
-b = 6
+# a = 10
+# b = 6
 
-print(a//b, a%b)
+# print(a//b, a%b)
+
+hours_in_day = 24
+days_in_year = 365
+
+# f-string interpolation
+msg = f'There are {hours_in_day} hours in a day, and {days_in_year} days in a year. The total hours in a year is {hours_in_day * days_in_year} hours.'
+
+# string format method
+template = "There are {} hours in a day, and {} days in a year."
+print(template.format(24, 365))
+
+print(msg)
