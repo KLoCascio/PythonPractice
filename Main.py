@@ -137,3 +137,49 @@
 # print(odds)
 # print(evens)
 
+# # Python Lists/Loops/List Comprehension https://github.com/SEIR-0911/u4_lesson_python_lists_loops
+# # Learn how to build and manipulate python lists
+# # Learn how to loop through lists
+# # Learn List Comprehension
+
+# my_list = [1,2,3,4]
+# other_list = list()
+
+# days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+# print('[0], index 0', days[0])
+# print('[0:4], start at 0, and show four', days[0:4])
+# print('[4:9], start at 4, and show 9, goes to Thursday, and shows Friday + 9, if value exists', days[4:9])
+# print('[:4], everything upto and including the 4th', days[:4]) # everything upto and including the 4th
+# print('[4:], everything after the fourth, but not including the 4th', days[4:]) # everything after the fourth, but not including the 4th
+# print('[-4], fourth from the end', days[-4]) # fourth from the end
+
+# nums = [1, 2, 3, 4, 5]
+# chars = ['a', 'b', 'c', 'd', 'e']
+
+# odds = [1, 3, 5, 7]
+# evens = [2, 4, 6, 8]
+
+# # Addition Operator
+# all_nums = odds + evens
+# print(all_nums)
+
+# # Spread Operator
+# spread_nums = [*odds, *evens]
+# print(spread_nums)
+
+# spread_nums.append(4)
+# print(spread_nums)
+
+# # Method	Description
+# # .append( element )	Add a single element to the end of the list
+# # .pop( index )	Removes element at the given index. If no index is specified, pop() removes and returns the last item in the list.
+# # .index( element )	returns the index of the element in the list
+# # .insert(index,element)	insert an element to the list at a specified index
+# # .remove( element )	Removes the first item from the list equal to the input value
+# # .count( element )	returns count of the element in the list
+# # .reverse()	reverses the list
+# # .sort()	sorts elements of a list
+# # .copy()	returns a shallow copy of the list
+# # len(list)	returns the total length of the list
+
+# LOOPS
