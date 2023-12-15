@@ -1,84 +1,3 @@
-# # WEIRD/NOTWEIRD ELSEIF
-# # Given an integer, , perform the following conditional actions:
-
-# # If  is odd, print Weird
-# # If  is even and in the inclusive range of  to , print Not Weird
-# # If  is even and in the inclusive range of  to , print Weird
-# # If  is even and greater than , print Not Weird
-
-# import math
-# import os
-# import random
-# import re
-# import sys
-
-# def weirdo(n: int) -> None:
-#     if (n%2 !=0):
-#         print("Weird")
-#     elif (n%2==0 and 6<=n<=20):
-#         print("Weird")
-#     else:
-#         print("Not Weird")
-
-# if __name__ == '__main__':
-#     n = int(input().strip())
-#     weirdo(n)
-    
-# # DIVISION INTEGER/FLOAT
-# # The provided code stub reads two integers, a and b, from STDIN.
-# # Add logic to print two lines. The first line should contain the result of integer division, a // b. The second line should contain the result of float division, a / b.
-# # No rounding or formatting is necessary.
-
-# class Division:
-#     def __init__(self, a, b):
-#         # integer division
-#         self.integer_results = a // b
-#         # float division
-#         self.float_results = a / b
-
-# if __name__ == '__main__':
-#     a = int(input())
-#     b = int(input())
-    
-#     division_instance = Division(a, b)
-    
-#     print(division_instance.integer_results)
-#     print(division_instance.float_results)
-
-# # LOOPS
-# # The provided code stub reads an integer, n, from STDIN. For all non-negative integers i < n, print i^2.
-
-# if __name__ == '__main__':
-#     n = int(input())
-    
-#     for i in range(n):
-#         print(i ** 2)
-
-# # Leap Years
-# # In the Gregorian calendar, three conditions are used to identify leap years:
-# # The year can be evenly divided by 4, is a leap year, unless:
-# # The year can be evenly divided by 100, it is NOT a leap year, unless:
-# # The year is also evenly divisible by 400. Then it is a leap year.
-# # Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False. Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
-
-# def is_leap(year):
-#     leap = False
-    
-#     # if year is divisible by 4 = true
-#     if year % 4 == 0:
-#         leap = True
-    
-#     # if year is evenly divisible by 100, it is not a leap year, unless it is also evenly divisible by 400
-#     if year % 100 == 0:
-#         leap = False
-#         if year % 400 == 0:
-#             leap = True
-    
-#     return leap
-
-# year = int(input())
-# print(is_leap(year))
-
 # # INTRO https://github.com/SEIR-0911/u4_lesson_python_intro/tree/main
 # # Execute Python scripts
 # # Define and use variables
@@ -227,3 +146,93 @@ for num in all_nums[0:6]:
 
 # for num in range(0,10):
 #     print(num)
+
+# # # CHALLENGES # # #
+# # WEIRD/NOTWEIRD ELSEIF
+# # Given an integer, , perform the following conditional actions:
+
+# # If  is odd, print Weird
+# # If  is even and in the inclusive range of  to , print Not Weird
+# # If  is even and in the inclusive range of  to , print Weird
+# # If  is even and greater than , print Not Weird
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+
+# def weirdo(n: int) -> None:
+#     if (n%2 !=0):
+#         print("Weird")
+#     elif (n%2==0 and 6<=n<=20):
+#         print("Weird")
+#     else:
+#         print("Not Weird")
+
+# if __name__ == '__main__':
+#     n = int(input().strip())
+#     weirdo(n)
+    
+# # DIVISION INTEGER/FLOAT
+# # The provided code stub reads two integers, a and b, from STDIN.
+# # Add logic to print two lines. The first line should contain the result of integer division, a // b. The second line should contain the result of float division, a / b.
+# # No rounding or formatting is necessary.
+
+# class Division:
+#     def __init__(self, a, b):
+#         # integer division
+#         self.integer_results = a // b
+#         # float division
+#         self.float_results = a / b
+
+# if __name__ == '__main__':
+#     a = int(input())
+#     b = int(input())
+    
+#     division_instance = Division(a, b)
+    
+#     print(division_instance.integer_results)
+#     print(division_instance.float_results)
+
+# # LOOPS
+# # The provided code stub reads an integer, n, from STDIN. For all non-negative integers i < n, print i^2.
+
+# if __name__ == '__main__':
+#     n = int(input())
+    
+#     for i in range(n):
+#         print(i ** 2)
+
+# # Leap Years
+# # In the Gregorian calendar, three conditions are used to identify leap years:
+# # The year can be evenly divided by 4, is a leap year, unless:
+# # The year can be evenly divided by 100, it is NOT a leap year, unless:
+# # The year is also evenly divisible by 400. Then it is a leap year.
+# # Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False. Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
+
+# def is_leap(year):
+#     leap = False
+    
+#     # if year is divisible by 4 = true
+#     if year % 4 == 0:
+#         leap = True
+    
+#     # if year is evenly divisible by 100, it is not a leap year, unless it is also evenly divisible by 400
+#     if year % 100 == 0:
+#         leap = False
+#         if year % 400 == 0:
+#             leap = True
+    
+#     return leap
+
+# year = int(input())
+# print(is_leap(year))
+
+# # PRINT FUNCTION
+# # Without using any string methods, try to print the following: 1234...n. Note that "" represents the consecutive values in between.
+# if __name__ == '__main__':
+#     n = int(input())
+    
+#     for i in range(1, n + 1):
+#         print(i, end="")
