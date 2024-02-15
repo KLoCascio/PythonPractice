@@ -255,5 +255,51 @@
 # pay = float(hrs) * float(rate)
 # print('Pay:', pay)
 
+# astr = 'Bob'
+# try: 
+#     print('Hello')
+#     istr = int(astr) # won't work due to not a string with integers
+#     print('There')
+# except: 
+#     istr = -1
 
+# print('Done', istr) #would print "Hello", and "Done -1"
 
+# x = 12
+# if x == 12 :
+#     print('Is 12')
+#     print('Is Definitely 12')
+#     print('Definitely 12')
+
+# x = 0
+# if x < 2:
+#     print('Small')
+# elif x < 10:
+#     print('Medium')
+# else:
+#     print('Large')
+# print('All Done')
+
+# hrs = input('Enter Hours:')
+# h = float(hrs)
+# rate = input('Enter Rate:')
+# r = float(rate)
+# overtimeR = r * 1.5
+# print(overtimeR)
+
+# if h > 40:
+#     # overtimeH are hours beyond 40 hours.
+#     overtimeH = h - 40
+#     print(overtimeH)
+#     # hours beyond 40 hours should be paid at overtimeR 
+#     overtime = overtimeH * overtimeR
+#     print(overtime)
+#     #bpay is basePay, should be hours (40) * 10.50 and equal 420
+#     bpay = 40 * r
+#     print(bpay)
+
+#     gpay = bpay + overtime
+#     print (gpay)
+# else:
+#     gpay = h * r
+#     print(gpay)
