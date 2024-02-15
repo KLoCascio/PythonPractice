@@ -135,14 +135,14 @@
 # # .copy()	returns a shallow copy of the list
 # # len(list)	returns the total length of the list
 
-# LOOPS
+# # LOOPS
 
-odds = [1, 3, 5, 7]
-evens = [2, 4, 6, 8]
-all_nums = odds + evens
+# odds = [1, 3, 5, 7]
+# evens = [2, 4, 6, 8]
+# all_nums = odds + evens
 
-for num in all_nums[0:6]:
-    print(num)
+# for num in all_nums[0:6]:
+#     print(num)
 
 # for num in range(0,10):
 #     print(num)
@@ -204,30 +204,30 @@ for num in all_nums[0:6]:
 #     for i in range(n):
 #         print(i ** 2)
 
-# # Leap Years
-# # In the Gregorian calendar, three conditions are used to identify leap years:
-# # The year can be evenly divided by 4, is a leap year, unless:
-# # The year can be evenly divided by 100, it is NOT a leap year, unless:
-# # The year is also evenly divisible by 400. Then it is a leap year.
-# # Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False. Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
+# # # Leap Years
+# # # In the Gregorian calendar, three conditions are used to identify leap years:
+# # # The year can be evenly divided by 4, is a leap year, unless:
+# # # The year can be evenly divided by 100, it is NOT a leap year, unless:
+# # # The year is also evenly divisible by 400. Then it is a leap year.
+# # # Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False. Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
 
-def is_leap(year):
-    leap = False
+# def is_leap(year):
+#     leap = False
     
-    # if year is divisible by 4 = true
-    if year % 4 == 0:
-        leap = True
+#     # if year is divisible by 4 = true
+#     if year % 4 == 0:
+#         leap = True
     
-    # if year is evenly divisible by 100, it is not a leap year, unless it is also evenly divisible by 400
-    if year % 100 == 0:
-        leap = False
-        if year % 400 == 0:
-            leap = True
+#     # if year is evenly divisible by 100, it is not a leap year, unless it is also evenly divisible by 400
+#     if year % 100 == 0:
+#         leap = False
+#         if year % 400 == 0:
+#             leap = True
     
-    return leap
+#     return leap
 
-year = int(input())
-print(is_leap(year))
+# year = int(input())
+# print(is_leap(year))
 
 # # PRINT FUNCTION
 # # Without using any string methods, try to print the following: 1234...n. Note that "" represents the consecutive values in between.
@@ -236,3 +236,22 @@ print(is_leap(year))
     
 #     for i in range(1, n + 1):
 #         print(i, end="")
+
+# # PYTHON FOR EVERYONE MICHIGAN U
+
+# print("Good Morning!")
+
+# # 2.3
+# inp = input('Europe Floor? ')
+# usf = int(inp) + 1
+# print('US Floor', usf)
+
+# print("123" + "abc")
+
+# x = 1 + 2 * 3 - 8 / 4
+# print(x)
+
+hrs = input("Enter Hours:")
+rate = input("Enter Rate:")
+pay = float(hrs) * float(rate)
+print('Pay:', pay)
