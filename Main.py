@@ -211,23 +211,23 @@ for num in all_nums[0:6]:
 # # The year is also evenly divisible by 400. Then it is a leap year.
 # # Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False. Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
 
-# def is_leap(year):
-#     leap = False
+def is_leap(year):
+    leap = False
     
-#     # if year is divisible by 4 = true
-#     if year % 4 == 0:
-#         leap = True
+    # if year is divisible by 4 = true
+    if year % 4 == 0:
+        leap = True
     
-#     # if year is evenly divisible by 100, it is not a leap year, unless it is also evenly divisible by 400
-#     if year % 100 == 0:
-#         leap = False
-#         if year % 400 == 0:
-#             leap = True
+    # if year is evenly divisible by 100, it is not a leap year, unless it is also evenly divisible by 400
+    if year % 100 == 0:
+        leap = False
+        if year % 400 == 0:
+            leap = True
     
-#     return leap
+    return leap
 
-# year = int(input())
-# print(is_leap(year))
+year = int(input())
+print(is_leap(year))
 
 # # PRINT FUNCTION
 # # Without using any string methods, try to print the following: 1234...n. Note that "" represents the consecutive values in between.
