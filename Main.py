@@ -304,18 +304,79 @@
 #     gpay = h * r
 #     print(gpay)
 
-score = input("Enter Score Between 0.0 and 1.0:")
-sc = float(score)
+# score = input("Enter Score Between 0.0 and 1.0:")
+# sc = float(score)
 
-if sc >= 0.9:
-    print('A')
-elif sc >= 0.8:
-    print('B')
-elif sc >= 0.7:
-    print('C')
-elif sc >= 0.6:
-    print('D')
-elif sc < 0.6:
-    print('F')
-else:
-    print('Please Enter a Suitable Score')
+# if sc >= 0.9:
+#     print('A')
+# elif sc >= 0.8:
+#     print('B')
+# elif sc >= 0.7:
+#     print('C')
+# elif sc >= 0.6:
+#     print('D')
+# elif sc < 0.6:
+#     print('F')
+# else:
+#     print('Please Enter a Suitable Score')
+#    
+
+# hrs = input('Enter Hours:')
+# h = float(hrs)
+# rate = input('Enter Rate:')
+# r = float(rate)
+# overtimeR = r * 1.5
+# print(overtimeR)
+
+# if h > 40:
+#     # overtimeH are hours beyond 40 hours.
+#     overtimeH = h - 40
+#     print(overtimeH)
+#     # hours beyond 40 hours should be paid at overtimeR 
+#     overtime = overtimeH * overtimeR
+#     print(overtime)
+#     #bpay is basePay, should be hours (40) * 10.50 and equal 420
+#     bpay = 40 * r
+#     print(bpay)
+
+#     gpay = bpay + overtime
+#     print (gpay)
+# else:
+#     gpay = h * r
+#     print(gpay)
+
+# def computepay(h, r):
+#     if h > 40: 
+#         overtime_hours = h - 40
+#         overtime_pay = overtime_hours * overtime_rate
+#         p = 40 * r + overtime_pay
+#     else:
+#         p = h * 10.50
+#     return p
+
+# hrs = input("Enter Hours:")
+# h = float(hrs)
+
+# rate = input("Enter Rate:")
+# r = float(rate)
+# overtime_rate = r * 1.5
+# print(overtime_rate)
+
+# p = computepay(h, r)
+# print("Pay", p)
+
+# tot = 0 
+# for i in [5, 4, 3, 2, 1] :
+#     tot = tot + 1
+# print(tot)
+
+# zork = 0
+# for thing in [9, 41, 12, 3, 74, 15] :
+#     zork = zork + thing
+# print('After', zork)
+
+# smallest_so_far = -1
+# for the_num in [9, 41, 12, 3, 74, 15] :
+#    if the_num < smallest_so_far :
+#       smallest_so_far = the_num
+# print(smallest_so_far)
