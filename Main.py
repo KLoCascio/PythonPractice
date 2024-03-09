@@ -407,35 +407,68 @@
 
 # print(f'The new colors have been titled: {colors_of_rainbow[0]}, {colors_of_rainbow[1]}, {colors_of_rainbow[2]}, {colors_of_rainbow[3]}, {colors_of_rainbow[4]}, and {colors_of_rainbow[5]}.')
 
-# Job Applicants
+# # Job Applicants
+# applicants = ["Kyndal", "Zach", "Charlie"]
 
-applicants = ["Kyndal", "Zach", "Charlie"]
+# # Late application, add to end.
+# applicants.append("Rob")
+# print(applicants)
 
-# Late application, add to end.
-applicants.append("Rob")
-print(applicants)
+# # Kyndal is mispelled, change to Kendall
+# index_kyndal = applicants.index("Kyndal")
+# applicants[index_kyndal] = "Kendall"
+# print(applicants)
 
-# Kyndal is mispelled, change to Kendall
-index_kyndal = applicants.index("Kyndal")
-applicants[index_kyndal] = "Kendall"
-print(applicants)
+# # Myles comes with recommendation, put him at the front of the list.
+# applicants.insert(0, "Myles")
+# print(applicants)
 
-# Myles comes with recommendation, put him at the front of the list.
-applicants.insert(0, "Myles")
-print(applicants)
+# # Where did Zach end up on the list's order?
+# zach_pos = applicants.index("Zach")
+# print(f'Zach is indexed at {zach_pos}, or position {zach_pos +1}.')
 
-# Where did Zach end up on the list's order?
-zach_pos = applicants.index("Zach")
-print(f'Zach is indexed at {zach_pos}, or position {zach_pos +1}.')
+# # Charlie was accepted another offer, let's remove him from the list.
+# applicants.remove("Charlie")
+# print(applicants)
 
-# Charlie was accepted another offer, let's remove him from the list.
-applicants.remove("Charlie")
-print(applicants)
+# # Your applicant at the front of the line was hired, remove him from the list.
+# applicants.remove(applicants[0])
+# print(applicants)
 
-# Your applicant at the front of the line was hired, remove him from the list.
-applicants.remove(applicants[0])
-print(applicants)
+# # A new applicant did really well on his second interview from another department, let's put him second on the list.
+# applicants.insert(1, "Christian")
+# print(applicants)
 
-# A new applicant did really well on his second interview from another department, let's put him second on the list.
-applicants.insert(1, "Christian")
-print(applicants)
+# Dictionary Practice
+
+apartment = {
+    "address": "123 Ocean Avenue",
+    "price": 100000,
+    "bedrooms": 3
+}
+
+# We need a tagline "Beautiful 3 bedroom apartment, priced at $100000."
+print(f"Beautiful {apartment['bedrooms']} bedroom apartment, priced at ${apartment['price']}.")
+
+# We need a zip code to put it up on StreetEasy.
+apartment["zip_code"] = "10011"
+print(apartment)
+
+# Landlord wants to sell it for more, increase the price by 20%.
+print(apartment["price"])
+apartment["price"] = int(apartment["price"] *1.20)
+print(apartment["price"])
+
+# We need to add square footage, let's say it's 2000sqft and price by square foot as well.
+apartment["square_foot"] = 2000
+print(apartment["square_foot"])
+
+apartment["price_per_sqft"] = round(apartment["square_foot"] / apartment["price"], 2) # round(dictionary["key"], //number of spaces to round//)
+print(apartment["price_per_sqft"])
+
+print(f'This apartment is {apartment["square_foot"]} square foot, and goes for ${apartment["price_per_sqft"]} per square foot.')
+print(apartment)
+
+# The apartment was sold, let's make note of it being sold and off the market.
+apartment["status"] = "Sold!"
+print(apartment)
