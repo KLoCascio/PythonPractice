@@ -470,5 +470,6 @@ print(f'This apartment is {apartment["square_foot"]} square foot, and goes for $
 print(apartment)
 
 # The apartment was sold, let's make note of it being sold and off the market.
-apartment["status"] = "Sold!"
+apartment["status"] = "sold"
+print(f'This aparment has been {apartment["status"]}!')
 print(apartment)
