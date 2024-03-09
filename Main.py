@@ -380,3 +380,62 @@
 #    if the_num < smallest_so_far :
 #       smallest_so_far = the_num
 # print(smallest_so_far)
+
+# stuff = 'Hello World'
+# type(stuff)
+
+# print(dir(stuff))
+
+# x = '40'
+# y = int(x) + 2
+# print(y)
+
+# # Colors of the Rainbow
+# colors_of_rainbow = ["red", "orange", "yellow", "green", "blue", "violet"]
+# # print(type(colors_of_rainbow))
+# # print(colors_of_rainbow)
+
+# print(f'An acronym for the colors of the rainbow is ROYGBV, with the colors of the rainbow being  {colors_of_rainbow[0]}, {colors_of_rainbow[1]}, {colors_of_rainbow[2]}, {colors_of_rainbow[3]}, {colors_of_rainbow[4]}, and {colors_of_rainbow[5]}.')
+
+# colors_of_rainbow[0] = "Macabre Red"
+# colors_of_rainbow[1] = "Citrus Orange"
+# colors_of_rainbow[2] = "Electric Yellow"
+# colors_of_rainbow[3] = "Meadows Green"
+# colors_of_rainbow[4] = "Sky Blue"
+# colors_of_rainbow[5] = "Violent Violet"
+# print(colors_of_rainbow)
+
+# print(f'The new colors have been titled: {colors_of_rainbow[0]}, {colors_of_rainbow[1]}, {colors_of_rainbow[2]}, {colors_of_rainbow[3]}, {colors_of_rainbow[4]}, and {colors_of_rainbow[5]}.')
+
+# Job Applicants
+
+applicants = ["Kyndal", "Zach", "Charlie"]
+
+# Late application, add to end.
+applicants.append("Rob")
+print(applicants)
+
+# Kyndal is mispelled, change to Kendall
+index_kyndal = applicants.index("Kyndal")
+applicants[index_kyndal] = "Kendall"
+print(applicants)
+
+# Myles comes with recommendation, put him at the front of the list.
+applicants.insert(0, "Myles")
+print(applicants)
+
+# Where did Zach end up on the list's order?
+zach_pos = applicants.index("Zach")
+print(f'Zach is indexed at {zach_pos}, or position {zach_pos +1}.')
+
+# Charlie was accepted another offer, let's remove him from the list.
+applicants.remove("Charlie")
+print(applicants)
+
+# Your applicant at the front of the line was hired, remove him from the list.
+applicants.remove(applicants[0])
+print(applicants)
+
+# A new applicant did really well on his second interview from another department, let's put him second on the list.
+applicants.insert(1, "Christian")
+print(applicants)
