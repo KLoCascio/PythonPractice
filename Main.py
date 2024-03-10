@@ -539,10 +539,21 @@
 # print(difference)
 # print(product)
 
-a = 3
-b = 5
-integer_solution = int(a / b)
-print(integer_solution)
-float_solution = float(a / b)
-print(float_solution)
+# a = 3
+# b = 5
+# integer_solution = int(a / b)
+# print(integer_solution)
+# float_solution = float(a / b)
+# print(float_solution)
 
+# For all non-negative integers i < n, print i^2.
+
+
+n = 10
+# while 1 <= n <= 20:
+#     print(n)
+#     print(n**2)
+#     n += 1
+
+for i in range(0, n):
+    print(i**2)
