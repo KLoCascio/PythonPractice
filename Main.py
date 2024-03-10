@@ -407,7 +407,15 @@
 
 # print(f'The new colors have been titled: {colors_of_rainbow[0]}, {colors_of_rainbow[1]}, {colors_of_rainbow[2]}, {colors_of_rainbow[3]}, {colors_of_rainbow[4]}, and {colors_of_rainbow[5]}.')
 
-# # Job Applicants
+# # Job Applicants Lists
+# .insert (1, "value")
+# .pop() // last item in the list, .pop(0) will remove index[0]
+# .append("value") // to the end of a list
+# len()
+# min() and max()
+# sum()
+
+
 # applicants = ["Kyndal", "Zach", "Charlie"]
 
 # # Late application, add to end.
@@ -463,13 +471,14 @@ print(apartment["price"])
 apartment["square_foot"] = 2000
 print(apartment["square_foot"])
 
-apartment["price_per_sqft"] = round(apartment["square_foot"] / apartment["price"], 2) # round(dictionary["key"], //number of spaces to round//)
+apartment["price_per_sqft"] = round(apartment["price"] / apartment["square_foot"], 2) # round(dictionary["key"], //number of spaces to round//)
 print(apartment["price_per_sqft"])
 
 print(f'This apartment is {apartment["square_foot"]} square foot, and goes for ${apartment["price_per_sqft"]} per square foot.')
 print(apartment)
 
 # The apartment was sold, let's make note of it being sold and off the market.
-apartment["status"] = "sold"
-print(f'This aparment has been {apartment["status"]}!')
+apartment["market_status"] = "sold"
+print(f'This aparment has been {apartment["market_status"]}!')
 print(apartment)
+
