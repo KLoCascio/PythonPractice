@@ -549,11 +549,31 @@
 # For all non-negative integers i < n, print i^2.
 
 
-n = 10
-# while 1 <= n <= 20:
-#     print(n)
-#     print(n**2)
-#     n += 1
+# n = 10
+# # while 1 <= n <= 20:
+# #     print(n)
+# #     print(n**2)
+# #     n += 1
 
-for i in range(0, n):
-    print(i**2)
+# for i in range(0, n):
+#     print(i**2)
+
+# year = 2000
+
+# def is_leap(year):
+#     # % 4 is a leap year unless % 100 unless ALSO % 400
+#     if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+#         leap = True
+#     else:
+#         leap = False
+#     return leap
+
+# # def is_leap(year):
+# #     leap = False
+# #     if 1900 <= year <= 10**5 and year % 4 == 0:
+# #         leap = True
+# #     else:
+# #         leap = False
+# #     return leap
+
+# print(is_leap(year))
