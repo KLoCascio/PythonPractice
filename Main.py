@@ -447,38 +447,102 @@
 # applicants.insert(1, "Christian")
 # print(applicants)
 
-# Dictionary Practice
+# # Dictionary Practice
+# apartment = {
+#     "address": "123 Ocean Avenue",
+#     "price": 100000,
+#     "bedrooms": 3
+# }
 
-apartment = {
-    "address": "123 Ocean Avenue",
-    "price": 100000,
-    "bedrooms": 3
-}
+# # We need a tagline "Beautiful 3 bedroom apartment, priced at $100000."
+# print(f"Beautiful {apartment['bedrooms']} bedroom apartment, priced at ${apartment['price']}.")
 
-# We need a tagline "Beautiful 3 bedroom apartment, priced at $100000."
-print(f"Beautiful {apartment['bedrooms']} bedroom apartment, priced at ${apartment['price']}.")
+# # We need a zip code to put it up on StreetEasy.
+# apartment["zip_code"] = "10011"
+# print(apartment)
 
-# We need a zip code to put it up on StreetEasy.
-apartment["zip_code"] = "10011"
-print(apartment)
+# # Landlord wants to sell it for more, increase the price by 20%.
+# print(apartment["price"])
+# apartment["price"] = int(apartment["price"] *1.20)
+# print(apartment["price"])
 
-# Landlord wants to sell it for more, increase the price by 20%.
-print(apartment["price"])
-apartment["price"] = int(apartment["price"] *1.20)
-print(apartment["price"])
+# # We need to add square footage, let's say it's 2000sqft and price by square foot as well.
+# apartment["square_foot"] = 2000
+# print(apartment["square_foot"])
 
-# We need to add square footage, let's say it's 2000sqft and price by square foot as well.
-apartment["square_foot"] = 2000
-print(apartment["square_foot"])
+# apartment["price_per_sqft"] = round(apartment["price"] / apartment["square_foot"], 2) # round(dictionary["key"], //number of spaces to round//)
+# print(apartment["price_per_sqft"])
 
-apartment["price_per_sqft"] = round(apartment["price"] / apartment["square_foot"], 2) # round(dictionary["key"], //number of spaces to round//)
-print(apartment["price_per_sqft"])
+# print(f'This apartment is {apartment["square_foot"]} square foot, and goes for ${apartment["price_per_sqft"]} per square foot.')
+# print(apartment)
 
-print(f'This apartment is {apartment["square_foot"]} square foot, and goes for ${apartment["price_per_sqft"]} per square foot.')
-print(apartment)
+# # The apartment was sold, let's make note of it being sold and off the market.
+# apartment["market_status"] = "sold"
+# print(f'This aparment has been {apartment["market_status"]}!')
+# print(apartment)
 
-# The apartment was sold, let's make note of it being sold and off the market.
-apartment["market_status"] = "sold"
-print(f'This aparment has been {apartment["market_status"]}!')
-print(apartment)
+# # Pythong Librarian
+# authors = {
+#     "Frank Herbert": {
+#         "genre": "science fiction",
+#         "books": [
+#             "Dune",
+#             "Dune: Messiah"
+#         ],
+#         "active": True
+#     },
+#     "Lev Grossman": {
+#         "genre": "fantasy",
+#         "books": ["The Magicians 1", 
+#                   "The Magicians 2",
+#                   "The Magicians 3"
+#         ],
+#         "active": True
+#     }
+# }
+
+# # Frank's First Book
+# print(authors['Frank Herbert']['books'][0])
+
+# # List all of the genres
+# for author, details in authors.items():
+#     print(details['genre'])
+
+# genres = [details['genre'] for details in authors.values()]
+# print(", ".join(genres))
+
+# n = 4
+# if n % 2 == 0 and n > 20:
+#     print("Not Weird")
+# # if n is even and >2 and <5, print Not Weird
+# elif n % 2 == 0 and 2 < n < 5:
+#     print("Not Weird")
+# # if n is even and >6 and <20, print Weird
+# elif n % 2 == 0 and 6 < n < 20:
+#     print("Weird")
+# # if n is odd, print Weird
+# else:
+#     print("Weird")
+
+# a = 5
+# b = 2
+# # sum of a + b
+# sum = a + b
+
+# # difference of a - b
+# difference = a - b
+
+# # product of a * b
+# product = a * b
+
+# print(sum)
+# print(difference)
+# print(product)
+
+a = 3
+b = 5
+integer_solution = int(a / b)
+print(integer_solution)
+float_solution = float(a / b)
+print(float_solution)
 
