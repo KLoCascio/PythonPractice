@@ -481,36 +481,6 @@
 # print(f'This aparment has been {apartment["market_status"]}!')
 # print(apartment)
 
-# # Pythong Librarian
-# authors = {
-#     "Frank Herbert": {
-#         "genre": "science fiction",
-#         "books": [
-#             "Dune",
-#             "Dune: Messiah"
-#         ],
-#         "active": True
-#     },
-#     "Lev Grossman": {
-#         "genre": "fantasy",
-#         "books": ["The Magicians 1", 
-#                   "The Magicians 2",
-#                   "The Magicians 3"
-#         ],
-#         "active": True
-#     }
-# }
-
-# # Frank's First Book
-# print(authors['Frank Herbert']['books'][0])
-
-# # List all of the genres
-# for author, details in authors.items():
-#     print(details['genre'])
-
-# genres = [details['genre'] for details in authors.values()]
-# print(", ".join(genres))
-
 # n = 4
 # if n % 2 == 0 and n > 20:
 #     print("Not Weird")
@@ -577,3 +547,81 @@
 # #     return leap
 
 # print(is_leap(year))
+
+# # Print range of number in one line from 1 to n.
+# n = 10
+# for i in range (1, n + 1):
+#     print(i, end="")
+#     n += 1
+
+#  #
+# n = int(input())
+# arr = map(int, input().split())
+# # remove duplicate scores
+# trimmed_scores = set(arr)
+
+# # sort in reverse order and choose second place -- index[1]
+# reverse_trimmed_scores = sorted(trimmed_scores, reverse=True)
+# second_place = reverse_trimmed_scores[1]
+
+# # print second place
+# print(second_place)
+
+# Python Librarian
+authors = {
+    "Frank Herbert": {
+        "genre": "science fiction",
+        "books": [
+            "Dune",
+            "Dune: Messiah"
+        ],
+        "active": True
+    },
+    "Lev Grossman": {
+        "genre": "fantasy",
+        "books": ["The Magicians 1", 
+                  "The Magicians 2",
+                  "The Magicians 3"
+        ],
+        "active": True
+    }
+}
+
+# # Frank's First Book
+# print(authors['Frank Herbert']['books'][0])
+
+# # List all of the genres
+# for author, details in authors.items():
+#     print(details['genre'])
+
+# genres = [details['genre'] for details in authors.values()]
+# print(", ".join(genres))
+
+# all_genres = []
+# all_genres.append(authors["Frank Herbert"]["genre"])
+# all_genres.append(authors["Lev Grossman"]["genre"])
+# print(all_genres)
+
+# # List All Books
+# books = []
+# # instead of books.append, use books.extend to merge books into a single list.
+# books.extend(authors["Frank Herbert"]["books"])
+# books.extend(authors["Lev Grossman"]["books"])
+# # prints unified list/array of books.
+# print(books)
+# # prints with out being in brackets
+# books_str = ", ".join(map(str, books))
+# print(books_str)
+
+# # Add "fiction" as a genre for Lev Grossman
+# # option #1
+# authors["Lev Grossman"]["genre"] = ["fantasy", "fiction"]
+# # option #2 with append, after changing genre from a string to a list to be able to append
+# authors["Lev Grossman"]["genre"] = [authors["Lev Grossman"]["genre"]]
+# authors["Lev Grossman"]["genre"].append("fiction")
+
+# print(authors["Lev Grossman"])
+
+# # Delete an author The Magicians 3 //authors["authorvalue"]["second level books"]["index #"]
+# del authors["Lev Grossman"]["books"][2]
+# print(authors["Lev Grossman"])
