@@ -711,21 +711,27 @@ price = 100
 # else: 
 #     print(f'{month} {day}, is in the Fall Season.')
 
-boat = {
-    "has_fox": True,
-    "has_chicken": True,
-    "has_grain": True
-}
+# boat = {
+#     "has_fox": True,
+#     "has_chicken": True,
+#     "has_grain": False
+# }
 
-# 1. If all three properties are true, print "The boat was too heavy and sank"
-if boat["has_chicken"]["has_fox"]["has_grain"]:
-    print('The boat has sank.')
+# # 1. If all three properties are true, print "The boat was too heavy and sank."
+# if boat["has_chicken"] and boat["has_fox"] and boat["has_grain"]:
+#     print('The boat has sank.')
 
-# 2. If the boat's has_fox and has_chicken properties are true, print "The fox ate the chicken"
+# # 2. If the boat's has_fox and has_chicken properties are true, print "The fox ate the chicken.."
+# if boat["has_fox"] and boat["has_chicken"] and not boat["has_grain"]:
+#     print('The fox ate the chicken.')
 
-# 3. If the boat's has_chicken and has_grain propertes are true, print "The chicken ate the grain"
+# # 3. If the boat's has_chicken and has_grain propertes are true, print "The chicken ate the grain."
+# if boat["has_chicken"] and boat["has_grain"] and not boat["has_fox"]:
+#     print('The chicken ate the grain.')
 
-# 4. If none of them are true, print "The boat sank from disuse"
+# # 4. If none of them are in the boat, print "The boat is ready to use."
+# if not (boat["has_chicken"] or boat["has_fox"] or boat["has_grain"]):
+#     print('The boat is ready for use.')
 
-# 5. Otherwise, print "The boat is in a valid, productive state. Go boat!"
+
 
