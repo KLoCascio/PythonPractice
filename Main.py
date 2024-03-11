@@ -695,19 +695,37 @@ price = 100
 # Jun 21 - Sep 21: Summer
 # Sep 22 - Dec 20: Fall
 
-month = "December"
-day = 1
+# month = "December"
+# day = 1
 
-# WINTER
-if month == "December" and 21 <= day <= 31 or month == "January" or month == "February" or month == "March" and 1 <= day <= 19:
-    print(f'{month} {day}, is in the Winter season.')
-# SPRING
-elif month == "March" and 20 <= day <= 31 or month == "April" or month == "May" or month == "June" and 1 <= day <= 20:
-    print(f'{month} {day}, is in the Spring Season.')
-# SUMMER
-elif month == "June" and 21 <= day <= 30 or month == "July" or month == "August" or month == "September" and 1 <= day <= 30:
-    print(f'{month} {day}, is in the Summer Season.')
-# FALL
-else: 
-    print(f'{month} {day}, is in the Fall Season.')
+# # WINTER
+# if month == "December" and 21 <= day <= 31 or month == "January" or month == "February" or month == "March" and 1 <= day <= 19:
+#     print(f'{month} {day}, is in the Winter season.')
+# # SPRING
+# elif month == "March" and 20 <= day <= 31 or month == "April" or month == "May" or month == "June" and 1 <= day <= 20:
+#     print(f'{month} {day}, is in the Spring Season.')
+# # SUMMER
+# elif month == "June" and 21 <= day <= 30 or month == "July" or month == "August" or month == "September" and 1 <= day <= 30:
+#     print(f'{month} {day}, is in the Summer Season.')
+# # FALL
+# else: 
+#     print(f'{month} {day}, is in the Fall Season.')
+
+boat = {
+    "has_fox": True,
+    "has_chicken": True,
+    "has_grain": True
+}
+
+# 1. If all three properties are true, print "The boat was too heavy and sank"
+if boat["has_chicken"]["has_fox"]["has_grain"]:
+    print('The boat has sank.')
+
+# 2. If the boat's has_fox and has_chicken properties are true, print "The fox ate the chicken"
+
+# 3. If the boat's has_chicken and has_grain propertes are true, print "The chicken ate the grain"
+
+# 4. If none of them are true, print "The boat sank from disuse"
+
+# 5. Otherwise, print "The boat is in a valid, productive state. Go boat!"
 
