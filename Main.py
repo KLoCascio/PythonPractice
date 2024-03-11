@@ -625,3 +625,89 @@ authors = {
 # # Delete an author The Magicians 3 //authors["authorvalue"]["second level books"]["index #"]
 # del authors["Lev Grossman"]["books"][2]
 # print(authors["Lev Grossman"])
+
+price = 100
+
+# if price < 10:
+#     print(price * 1.10)
+#     print("Is under 10")
+# else:
+#     print(price * 1.25)
+#     print("Isn't under 10")
+
+# customer = { "name": "Zachary Abercrombie", "status": "VIP" }
+# if customer["status"] == "VIP":
+#     price = price - (price * .20)
+# print(price)
+
+# bargain_bin = [
+#     {"name": "90s Comedy DVD", "price": 2.99},
+#     {"name": "80s Drama DVD", "price": 3.99}
+# ]
+
+# # conditional dictionary
+# if bargain_bin[0]["price"] < bargain_bin[1]["price"]:
+#     print(f'Your best value is the {bargain_bin[0]["name"]} for only ${bargain_bin[0]["price"]}.')
+# else:
+#     print(f'Your best value is the {bargain_bin[1]["name"]} for only ${bargain_bin[1]["price"]}.')
+
+# letter = "a"
+# if letter.lower() in {'a', 'e', 'i', 'o', 'u'}:
+#     print(f'{letter} is a vowel.')
+# else:
+#     print(f'{letter} is not a vowel.')
+
+# player = "rock"
+# cpu = "scissors"
+
+# if player == "rock":
+#     if cpu == "scissors":
+#         print(f'The Player wins with {player}!')
+#     if cpu == "paper":
+#         print(f'CPU wins with {cpu}!')
+
+# if player == "paper":
+#     if cpu == "rock":
+#         print(f'The Player wins with {player}!')
+#     if cpu == "scissors":
+#         print(f'CPU wins with {cpu}!')
+
+# if player == "scissors":
+#     if cpu == "paper":
+#         print(f'The Player wins with {player}!')
+#     if cpu == "rock":
+#         print(f'CPU wins with {cpu}!')
+
+# a = 5
+# b = 4
+# c = 3
+
+# if a == b == c:
+#     print('Equalateral: All Sides are Equal')
+# if a != b != c:
+#     print('Scalene: All Sides are Unequal')
+# if a == b != c or a == c != b or c == b != a:
+#     print('Isosceles: Two Sides are the Same')
+
+# Seasonal Challenge
+# Dec 21 - Mar 19: Winter
+# Mar 20 - Jun 20: Spring
+# Jun 21 - Sep 21: Summer
+# Sep 22 - Dec 20: Fall
+
+month = "December"
+day = 1
+
+# WINTER
+if month == "December" and 21 <= day <= 31 or month == "January" or month == "February" or month == "March" and 1 <= day <= 19:
+    print(f'{month} {day}, is in the Winter season.')
+# SPRING
+elif month == "March" and 20 <= day <= 31 or month == "April" or month == "May" or month == "June" and 1 <= day <= 20:
+    print(f'{month} {day}, is in the Spring Season.')
+# SUMMER
+elif month == "June" and 21 <= day <= 30 or month == "July" or month == "August" or month == "September" and 1 <= day <= 30:
+    print(f'{month} {day}, is in the Summer Season.')
+# FALL
+else: 
+    print(f'{month} {day}, is in the Fall Season.')
+
